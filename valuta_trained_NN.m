@@ -33,7 +33,7 @@ ECG_CINC.dati=[ECG_PRO(:)' ECG_mean];
     
     out_labels=[];
     out_labels(1:9)=0;
-    iii=find(probs>0.3); if(numel(iii)<1),iii=find(probs>0.2);end
+    iii=find(probs>0.3); if(numel(iii)<1),[iitmp,iii]=max(probs);end
     out_labels(iii)=1;
     scores=probs;
     
