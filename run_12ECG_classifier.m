@@ -17,7 +17,7 @@ function [score, label] = run_12ECG_classifier(data,header_data,classes, model)
     
    % fprintf(' before get_12ECG_cls_ivo size(data)=%6.0f%6.0f\n');
     
-    [score, label]=get_12ECG_cls_ivo(data);
+    [score, label]=get_12ECG_cls_ivo(data,header_data,model);
     
  
     
